@@ -1,3 +1,5 @@
+<!-- css file containing attributes of classes -->
+
 *{
     margin:0;
     padding:0;
@@ -25,6 +27,7 @@ img{color:#fff;
     padding-top: 50;
 }
 
+<!-- font attributes for autotyped text in index -->
 span{
     font-size: 25px;
     color:whitesmoke
