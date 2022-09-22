@@ -1,11 +1,12 @@
 <html>
-
+    <!-- font declaration -->
     <style>
         body {
           font-family: sans-serif;
         }
         </style>
 
+<!-- center aligning text -->
 <head>
     <title style="color:red">Moving Forward</title>
     <style>
@@ -16,24 +17,29 @@
         h4{text-align: center;}
         h5{text-align: center;}
     </style>
+        <!-- linking style.css and slideshow library -->
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
+<!-- making background black -->
 <body bgcolor=”#000000">
 
+<!-- title 'moving forward' embedded with link to index -->
 <center><a href = "index.html"><img class="pic" src="images/title.png" style="width:720px;height:150px;"/></a></center>
 
+<!-- image saying 'photo gallery'-->
 <center><img class="pic" src="images/gallery.png" style="width:400px;height:50px;"/></center>
 
+<!-- image describing slideshow -->
 <center><img class = "imgtext" src="images/slideshow.png" style="width:720px;height:120px;"/></center>
 
 <div class="photocontainer">
-    <!-- Slider main container -->
+    <!-- slider main container -->
 <div class="swiper">
-    <!-- Additional required wrapper -->
+    <!-- additional required wrapper -->
     <div class="swiper-wrapper">
-      <!-- Slides -->
+      <!-- slides -->
       <div class="swiper-slide"><img src="images/bts1.jpg" style="width:1145px;height:680px;"></div>
       <div class="swiper-slide"><img src="images/bts3.jpg" style="width:1145px;height:680px;"></div>
       <div class="swiper-slide"><img src="images/still1.jpg" style="width:1145px;height:680px;"></div>
@@ -41,10 +47,10 @@
       <div class="swiper-slide"><img src="images/still3.jpg" style="width:1145px;height:680px;"></div>
 
     </div>
-    <!-- If we need pagination -->
+    <!-- pagination -->
     <div class="swiper-pagination"></div>
   
-    <!-- If we need navigation buttons -->
+    <!-- navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   
@@ -52,8 +58,10 @@
   
 </div>
 
+<!-- slideshow script initialization -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+<!-- defining specific slideshow parameters -->
 <script>const swiper = new Swiper('.swiper', {
     autoplay: {
         delay:3000,
@@ -73,8 +81,10 @@
   });
 </script>
 
+<!-- image explaining how to navigate to next webpage -->
 <center><img class = "pic" src="images/cmd.png" style="width:720px;height:60px;"/></center>
 
+<!-- javascript avatar animation -->
 <iframe style="width: 1440px; height: 360px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/suedfood/full/XrLZhnPDu"></iframe>
 
 </body>

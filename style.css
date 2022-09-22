@@ -10,6 +10,11 @@
 
 img {color:#fff;
     padding:5px;
+    
+}
+
+img:hover {
+    cursor: pointer;
 }
 
 .pic {
@@ -20,7 +25,7 @@ img {color:#fff;
 
 .container {
     width:100%;
-    height:100vh;
+    /* height:100v; */ 
     color:whitesmoke;
     align-items:center;
     padding-top: 50;
@@ -52,4 +57,10 @@ span{
     justify-content: center;
     display: flex;
     padding: 5px;
+}
+
+.video{
+    align-items: center;
+    justify-content: center;
+        display: flex;
 }
