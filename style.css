@@ -13,10 +13,6 @@ img {color:#fff;
     
 }
 
-img:hover {
-    cursor: pointer;
-}
-
 .pic {
     padding:5px;
     margin-left: auto;
