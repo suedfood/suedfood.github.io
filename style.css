@@ -1,3 +1,6 @@
+ /* defining attributes of classes */ 
+
+/* overall margin and padding */ 
 *{
     margin:0;
     padding:0;
@@ -26,6 +29,7 @@ img {color:#fff;
     padding-top: 50;
 }
 
+ /* attributes for autotyped text */ 
 span{
     font-size: 25px;
     color:whitesmoke
@@ -54,6 +58,7 @@ span{
     padding: 5px;
 }
 
+ /* final film attributes */ 
 .video{
     align-items: center;
     justify-content: center;
