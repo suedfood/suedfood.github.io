@@ -3,22 +3,23 @@
     padding:0;
 }
 
-.text{
+.text {
     padding:30px;
     color:white;
 }
 
-img{color:#fff;
-    padding:5px;  
+img {color:#fff;
+    padding:5px;
+    
 }
 
-.pic{
+.pic {
     padding:5px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.container{
+.container {
     width:100%;
     color:whitesmoke;
     align-items:center;
