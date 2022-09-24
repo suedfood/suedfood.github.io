@@ -8,7 +8,18 @@ To create an immersive, living experience that breathed 'Moving Forward,' I want
 As the ultimate cherry on the cake, I created javascript sketches containing controllable avatars that enabled the users to move forward to the following webpage until the last one. Naturally, I gave them the option to move backward after the last page if they intended to. Overall, I wanted the experience to 'show' the idea of moving forward instead of telling it through mere words.
 
 ## Process
-How did you go about implementing the concept?
+#### Vibe
+To implement the concept, I decided the _feel and vibe_ of the website. A premium, black background with golden and red elements felt nice and welcoming.
+#### Elements
+The limited, mostly traditional, fonts that HTML supports hindered my vision of artsy product emanating a sheen of consummate professionalism. Therefore, after deciding the locations of my elements - philosophy, awards, start button, titls, descriptions - I created them on photoshop and added them as images.
+#### P5JS Sketches
+Using Javascript's creative coding library p5js, I created sketches of avatars moving forward via for loops and 2D sprites. Then, I enabled the audience to control them via keyboard keys. A single line of code helped me embed the sketches directly onto the website.
+#### Film 
+I uploaded my film on Google Drive. Then, I used one line of code containing the link to embed it onto my final webpage. 
+#### Images Slideshow
+To create a more intimate experience, I gave the audience access to some behind the scenes images through an automated slideshow I learnt via YouTube.
+#### Autotyped Remarks
+The first webpage seemed too static compared to the others. Therefore, I added autotyped fictional remarks by people using a YouTube tutorial. Short and easy to follow, I added a mix of formal and fun-sounding informal remarks. It added a degree of legitimacy to the project.
 
 ## Reflection
 While crafting the initial wireframe, I planned on keeping everything on one page. However, I realized it was an informational overload while also failing to support the theme of _moving forward_. Once I figured the overarching experience I endeavored to deliver to the audience, the nitty gitty mostly took care of itself. What I wanted to create, I created perfectly. However, I did confront challenges in this taxing yet rewarding journey.
