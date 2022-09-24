@@ -9,7 +9,7 @@ As the ultimate cherry on the cake, I created javascript sketches containing con
 
 ## Process
 #### Vibe
-To implement the concept, I decided the _feel and vibe_ of the website. A premium, black background with golden and red elements felt nice and welcoming.
+To implement the concept, I decided a premium, black background with golden and red elements for a welcoming contrast.
 #### Elements
 The limited, mostly traditional, fonts that HTML supports hindered my vision of artsy product emanating a sheen of consummate professionalism. Therefore, after deciding the locations of my elements - philosophy, awards, start button, titles, descriptions - I created them on photoshop and added them as images.
 #### P5JS Sketches
