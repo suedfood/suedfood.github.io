@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Parallax Scroll Webpage </title>
+        <link rel= "stylesheet" type= "text/css" href= "style.css">
+    </head>
+    <body>
+        <header>
+            <a href = "#" class= "logo">1984</a>
+            <ul>
+                <li><a href = "#">Murder</a></li>
+                <li><a href = "#">Execute</a></li>
+                <li><a href = "#">Feast</a></li>
+                <li><a href = "#">Join</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="images/sky.jpeg" id="stars">
+            <img src="images/moonX.png" id="moon">
+            <h2 id="text">YOU ARE 'SAFE'</h2>
+            <img src="images/hi.png" id="mountains_front">
+        </section>
+
+        <div class="sec"> 
+            <h2>Surveillance</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p> - </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_front = document.getElementById('mountains_front');
+            let text = document.getElementById('text');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.top = value * 0.5 - 'px';
+                moon.style.top = value * 1.2 + 'px';
+                mountains_front.style.top = value * 0.8 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1 + 'px';
+            })
+        </script>
+    </body>
+</html>
