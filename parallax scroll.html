@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<!-- linking css and javascript files -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylish.css">
+    <script src="myscript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- new addition contact form -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<!-- header text and images initialization -->
+
+<body>
+    <header>
+        <a class="logo">HELLO, FRIEND</a>
+    </header>
+    <section>
+        <img src="images/starrysky.jpeg" id="stars">
+        <img src="images/camX.png" id="moon">
+        <h2 id="text">SYED FAHAD RIZWAN</h2>
+        <img src="images/cam.png" id="mountains_front">
+        <img src="images/crash.png" id="earth">
+    </section>
+
+    <!-- parallax scroll -->
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_front = document.getElementById('mountains_front');
+        let text = document.getElementById('text');
+        let earth = document.getElementById('earth');
+        let sfr = document.getElementById('sfr');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.top = value * 0.5 - 'px';
+            moon.style.left = value * 1.5 + 'px';
+            moon.style.top = value * 0.91 + 'px';
+            moon.style.width = value * 0.35 + 'px';
+            moon.style.height = value * 0.35 + 'px';
+            mountains_front.style.top = value * 0.7 + 'px';
+            earth.style.left = value * 1.35 + 'px';
+            earth.style.width = value * 0.5 + 'px';
+            earth.style.height = value * 0.42 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1 + 'px';
+            sfr.style.top = value * 0.7 + 'px';
+        })
+    </script>
+
+    <!-- who am I - text and image -->
+    <div class="sec">
+        <h2>Who Am I?</h2>
+        <img class="portrait" src="images/SFR RA Photo.jpg">
+        <p>
+            <span class="auto-type"></span>
+        </p>
+        <h3>
+            <span class="auto-type2"></span>
+        </h3>
+
+        <!-- autotyped intro -->
+        <!-- script initialization for autotype comment feature -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"> </script>
+
+        <!-- script for autotype feature -->
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["I am Syed Fahad Rizwan, a sophomore at New York University Abu Dhabi, majoring in Film and New Media and minoring in Interactive Media. I love cats, sneakers, Junji Ito, synthwave music, strawberries, and the scent of cocoa butter and petroleum."],
+                typeSpeed: 25,
+                backSpeed: 5,
+                loop: false
+            })
+            var typed = new Typed(".auto-type2", {
+                strings: ["Welcome To My Portfolio!"],
+                typeSpeed: 350,
+                loop: false
+            })
+        </script>
+    </div>
+
+    <div class="snippet">
+        <center><img src="images/snippet.png" id = "snip"></center>
+    </div>
+
+    <!-- image slideshow -->
+    <div class="photocontainer">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/filmbts1.png"></div>
+                <div class="swiper-slide"><img src="images/comicbts1.png"></div>
+                <div class="swiper-slide"><img src="images/mfbts1.png"></div>
+                <div class="swiper-slide"><img src="images/filmbts3.png"></div>
+                <div class="swiper-slide"><img src="images/mfbts2.png"></div>
+                <div class="swiper-slide"><img src="images/filmbts2.png"></div>
+                <div class="swiper-slide"><img src="images/comicbts2.png"></div>
+                <div class="swiper-slide"><img src="images/audiobts1.png"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <!-- javascript avatar animation -->
+    <div class="hello">
+        <center><iframe class = "lasergame" scrolling="no" frameborder="0"
+                src="https://editor.p5js.org/suedfood/full/YvwBmSsz2L"></iframe></center>
+    </div>
+
+    <!-- reume -->
+    <div class="resume">
+        <center> <a href="https://drive.google.com/file/d/1i2PjajB8nIGZCgn4uZCUkHD9Fup7Zkxz/view" target="_blank"><img
+                    class="resumepng" src="images/resume.png"></a></center>
+    </div>
+
+    <!-- contact form -->
+    <center>
+        <center>
+            <div class="container">
+                <form action="mailto:sr5931@nyu.edu" method="POST" enctype="text/plain">
+                    <div class="title">
+                        <h2>GET IN TOUCH</h2>
+                        <div class="action">
+                            <input type="submit" value="SEND AN EMAIL">
+                        </div>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/dezenutzs" class="fa fa-facebook" target="_blank"></a>
+                            <a href="https://www.instagram.com/suedfood/" class="fa fa-instagram" target="_blank"></a>
+                            <a href="https://github.com/suedfood" class="fa fa-github" target="_blank"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </center>
+</body>
+
+</html>
